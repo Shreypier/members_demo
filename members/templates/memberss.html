@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All members</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <h1>All Members</h1>
+</body>
+<ul> 
+    {% for member in all_members%}
+   <li><a href="details/{{member.id}}/"> {{member.First_Name}} {{member.Last_Name}}<a></li>
+    {% endfor %}
+</ul>
+</html>
